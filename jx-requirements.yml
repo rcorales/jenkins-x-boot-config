@@ -3,7 +3,7 @@ cluster:
   environmentGitOwner: "vfarcic"
   environmentGitPublic: false
   project: "devops-26"
-  provider: aws
+  provider: eks
   zone: ""
 gitops: true
 environments:
