@@ -1,6 +1,6 @@
 cluster:
   clusterName: "jx-boot"
-  environmentGitOwner: "rcorales"
+  environmentGitOwner: "vfarcic"
   environmentGitPublic: false
   project: "devops-26"
   provider: aws
