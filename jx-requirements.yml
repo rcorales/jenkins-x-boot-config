@@ -1,9 +1,9 @@
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
+  clusterName: "jx-boot"
+  environmentGitOwner: "rcorales"
   environmentGitPublic: false
-  project: ""
-  provider: gke
+  project: "devops-26"
+  provider: aws
   zone: ""
 gitops: true
 environments:
@@ -18,16 +18,16 @@ ingress:
     enabled: false
     production: false
 kaniko: true
-secretStorage: local
+secretStorage: vault
 storage:
   logs:
-    enabled: false
+    enabled: true
     url: ""
   reports:
     enabled: false
     url: ""
   repository:
-    enabled: false
+    enabled: true
     url: ""
 versionStream:
   ref: "master"
