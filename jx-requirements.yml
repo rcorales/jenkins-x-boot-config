@@ -11,10 +11,10 @@ environments:
 - key: staging
 - key: production
 ingress:
-  domain: "ryanc.com"
+  domain: "dzone-jenkinsx.com"
   externalDNS: true
   tls:
-    email: "ryanc@codev.com"
+    email: "ryanc@devada.com"
     enabled: true
     production: true
 kaniko: true
