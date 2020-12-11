@@ -1,30 +1,30 @@
 cluster:
-  clusterName: "jx-boot"
-  environmentGitOwner: "vfarcic"
+  clusterName: "jx-dzone"
+  environmentGitOwner: "rcorales"
   environmentGitPublic: false
   project: "devops-26"
   provider: eks
-  zone: ""
+  zone: "us-east-1"
 gitops: true
 environments:
 - key: dev
 - key: staging
 - key: production
 ingress:
-  domain: ""
-  externalDNS: false
+  domain: "ryanc.com"
+  externalDNS: true
   tls:
-    email: ""
-    enabled: false
-    production: false
+    email: "ryanc@codev.com"
+    enabled: true
+    production: true
 kaniko: true
 secretStorage: vault
 storage:
   logs:
-    enabled: true
+    enabled: true 
     url: ""
   reports:
-    enabled: false
+    enabled: true
     url: ""
   repository:
     enabled: true
@@ -32,4 +32,4 @@ storage:
 versionStream:
   ref: "master"
   url: https://github.com/jenkins-x/jenkins-x-versions.git
-webhook: lighthouse
+webhook: prow
